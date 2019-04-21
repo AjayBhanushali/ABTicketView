@@ -7,48 +7,48 @@
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/EZSwiftExtensions.svg)](https://img.shields.io/cocoapods/v/LFAlertController.svg)  
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 
- ABGaugeViewKit is a framework with a lot of access to change it's UI which will help you to add Gauge View in your iOS App.
-
-<a href="https://giphy.com/embed/hWXfyot4Nsiy2946Ty"></a>
+![Alt Text](https://media.giphy.com/media/YPJfbd6HsGOTanUKwd/giphy.gif)
 
 ## Features
 
-- [x] Codeless Implementation
-- [x] Vector Based
+- [x] Easy to integrate using IBDesig
+- [x] Customisable circle radius, cutting depth and sides
+- [x] Simple AF
 
 ## Requirements
 
 - iOS 11.0+
-- Xcode 9.0
-- Swift 3.0+
+- Xcode 10.0
+- Swift 4.0+
 
 ## Installation
+For tutorial [click here](https://medium.com/@ajayrbhanushali/ios-create-ticket-view-coupon-view-in-swift-4-using-abticketview-ec7a69366c66)
 
 #### CocoaPods
-You can use [CocoaPods](https://cocoapods.org/pods/ABGaugeViewKit) to install `ABGaugeViewKit` by adding it to your `Podfile`:
+You can use [CocoaPods](https://cocoapods.org/pods/ABTicketView) to install `ABTicketView` by adding it to your `Podfile`:
 
 ```ruby
-platform :ios, '11.0'
+platform :ios, '12.0'
 use_frameworks!
-pod 'ABGaugeViewKit'
+pod 'ABTicketView'
 ```
 ## Usage example
 
 ```swift
-import ABGaugeViewKit
+import ABTicketView
 
 //Create an IBOutlet from Storyboard of UIView
-// Note: UIView must be a square for best output!
-@IBOutlet weak var myGaugeView: ABGaugeView!
+@IBOutlet weak var myTicketView: ABTicketView!
 
 // To change needle value
-// Note: Needle value should in between 0 to 100
-myGaugeView.needleValue = 100
+myTicketView.circleDiameter = 20
+myTicketView.cuttingDepth = 20
+myTicketView.ticketColor = UIColor.blue
 ```
 
 ## Contribute
 
-We would love you for the contribution to **ABGaugeViewKit**, check the ``LICENSE`` file for more info.
+We would love you for the contribution to **ABTicketView**, check the ``LICENSE`` file for more info.
 
 ## Meta
 
