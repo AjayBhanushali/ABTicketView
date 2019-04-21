@@ -9,7 +9,7 @@
 
  ABGaugeViewKit is a framework with a lot of access to change it's UI which will help you to add Gauge View in your iOS App.
 
-<a href="https://imgflip.com/gif/25lu0h"><img src="https://i.imgflip.com/25lu0h.gif" title="made at imgflip.com"/></a>
+<a href="https://giphy.com/embed/hWXfyot4Nsiy2946Ty"></a>
 
 ## Features
 
