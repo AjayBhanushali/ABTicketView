@@ -11,7 +11,7 @@
 
 ## Features
 
-- [x] Easy to integrate using IBDesig
+- [x] Easy to integrate using IBDesignables
 - [x] Customisable circle radius, cutting depth and sides
 - [x] Simple AF
 
