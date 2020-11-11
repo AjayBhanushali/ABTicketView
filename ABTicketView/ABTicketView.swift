@@ -11,17 +11,17 @@ import UIKit
 @IBDesignable
 class ABTicketView : UIView {
     
-    @IBInspectable var ticketColor: UIColor = UIColor(red: 18/255.0, green: 112/255.0, blue: 178/255.0, alpha: 1.0)
-    @IBInspectable var circleDiameter: CGFloat = 10
-    @IBInspectable var cuttingDepth: CGFloat = 1
-    @IBInspectable var tearRight: Bool = true
-    @IBInspectable var tearLeft: Bool = true
-    @IBInspectable var tearTop: Bool = true
-    @IBInspectable var tearBottom: Bool = true
+    @IBInspectable public var ticketColor: UIColor = UIColor(red: 18/255.0, green: 112/255.0, blue: 178/255.0, alpha: 1.0)
+    @IBInspectable public var circleDiameter: CGFloat = 10
+    @IBInspectable public var cuttingDepth: CGFloat = 1
+    @IBInspectable public var tearRight: Bool = true
+    @IBInspectable public var tearLeft: Bool = true
+    @IBInspectable public var tearTop: Bool = true
+    @IBInspectable public var tearBottom: Bool = true
     
-    let lineSeparator:CGFloat = 1.0
-    var lineHeight: CGFloat = 10
-    let cuttingLength: CGFloat = 2
+    private let lineSeparator: CGFloat = 1.0
+    private var lineHeight: CGFloat = 10
+    private let cuttingLength: CGFloat = 2
     
     // MARK:- UIView Draw method
     override func draw(_ rect: CGRect) {
@@ -33,7 +33,7 @@ class ABTicketView : UIView {
         super.layoutSubviews()
     }
     
-    func drawTicket() {
+    private func drawTicket() {
         lineHeight = circleDiameter
         let ticketLayer = CAShapeLayer()
         ticketLayer.frame = bounds
@@ -222,7 +222,7 @@ class ABTicketView : UIView {
 }
 
 extension CGFloat {
-    func toRadians() -> CGFloat {
+    internal func toRadians() -> CGFloat {
         return self * .pi / 180.0
     }
 }
